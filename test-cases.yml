@@ -1,0 +1,30 @@
+---
+- summary: |
+    Проверка входа пользователя с существующими логином и паролем
+  requirement: |
+    При верном вводе логине и пароля пользователь должен войти в систему
+  prerequisites: |
+    No data
+  test-data: |
+    Логин = stoitskiy.boriska@mail.ru  Пароль = Zasdf123
+  steps:
+    - Нажать кнопку Sign In
+    - Ввести логин
+    - Ввести пароль
+    - Нажать кнопку Submit
+  expected-result: |
+    Пользователь успешно авторизован
+
+- summary: |
+    Проверка авторизации через GitHub
+  requirement: |
+    При авторизации через GitHub пользователь должен войти в систему
+  prerequisites:
+    No data
+  test-data: |
+    Пользователь вошел в свой аккаунт на GitHub
+  steps:
+    - Нажать кнопку Sign In
+    - Нажать кнопку Sign In with GitHub
+  expected-result: |
+    Пользователь успешно авторизован
