@@ -1,0 +1,24 @@
+---
+- summary: |
+    Успешная регистрация студента
+  status: pass
+
+- summary: |
+    Проверка обязательных полей
+  status: pass
+
+- summary: |
+    Проверка валидации email
+  status: pass
+
+- summary: |
+    Проверка сохранения данных при ошибке
+  status: pass
+
+- summary: |
+    Проверка доступности подсказок
+  status: fail
+
+- summary: |
+    Ввод специальных символов
+  status: fail
